@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class swapInt
+{
+    //----------------------------------------------------------------------------------------
+    // Reads two interger varaibles and exchanges the value if the first > second. PP 3.1
+    //----------------------------------------------------------------------------------------
+    
+    public static void main (String[] args)
+    {
+        double a , b, temp;
+        
+        Scanner keyboard = new Scanner (System.in);
+        
+        System.out.print ("Enter a value for A: ");
+        a = keyboard.nextInt();
+        
+        System.out.print ("Enter a value for B: ");
+        b = keyboard.nextInt();
+        
+        if (a > b)
+        {
+            temp = b;
+            b = a;
+            a = temp;
+        }
+        
+        System.out.println();
+        System.out.print("A's new value: " + a);
+        System.out.println();
+        System.out.print("B's new value: " + b);
+    }
+    
+}
